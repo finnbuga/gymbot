@@ -1,0 +1,58 @@
+body {
+  background: #30303A;
+  font-family: sans-serif;
+}
+#chart {
+  width: 450px;
+  height: 300px;
+  margin: 30px auto 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+}
+#machine-name {
+  margin-botton: 30px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+#chart #bars {
+  display: inline-block;
+  width: 450px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 0 1px #444;
+}
+#chart #bars li {
+  display: table-cell;
+  width: 150px;
+  height: 300px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+#chart #bars li .bar {
+  display: block;
+  width: 120px;
+  margin-left: 15px;
+  background: #2BEB2B;
+  position: absolute;
+  bottom: 0;
+}
+#chart #bars li .bar:hover {
+  cursor: pointer;
+}
+#chart #bars li .bar:before {
+  color: white;
+  content: attr(data-percentage);
+  position: relative;
+  bottom: 20px;
+}
+#chart #bars li span {
+  color: #eee;
+  width: 100%;
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  text-align: center;
+}
